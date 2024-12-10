@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background: #E2E2E2;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 3vh;
+}
+
+.header__title {
+  color: #3b5bdb;
+  font-weight: bold;
+  font-size: 3vh;
+}
+
+.header__container {
+  background-color: white;
+  display: flex;
+  height: 10vh;
+}
+
+.header__content {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+}
+
+.header__input--search {
+  background-color: #ebebeb;
+  height: 6vh;
+  width: 40vw;
+  border-radius: 5px;
+  border: none;
+  padding-left: 2vh;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 60vw;
+  align-self: center;
+  margin-top: 4vh;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+.form__title {
+  font-size: 2vw;
+}
+
+.form__input-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.form__input--text {
+  background-color: #ebebeb;
+  height: 6vh;
+  width: 40vw;
+  border-radius: 5px;
+  border: none;
+  padding-left: 2vh;
+  margin-right: 2vw;
+}
+
+.form__input--priority {
+  background-color: #ebebeb;
+  height: 6vh;
+  width: 20vw;
+  border-radius: 5px;
+  border: none;
+  padding-left: 2vh;
+  color: #7c7c7c;
+}
+
+.form__button--add-task {
+  background-color: #3b5bdb;
+  border: none;
+  width: 60vw;
+  height: 7vh;
+  border-radius: 5px;
+  color: white;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.tasks__container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 60vw;
+  align-self: center;
+  margin-top: 4vh;
+  padding: 3%;
+  border-radius: 10px;
+  margin-bottom: 4vh;
+}
+
+.task__item {
+  font-size: 2vh;
+  display: flex;
+  margin-top: 5vh;
+  justify-content: space-between;
+  background-color: #f1f3f5;
+  height: 50px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.tasks__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task__button--remove-task {
+  width: 30px;
+  height: 30px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAACUCAMAAABY3hBoAAAAYFBMVEX ///8AAADNzc3h4eFFRUXt7e1sbGyhoaH8/PySkpJBQUF+fn5gYGBbW1ukpKRTU1NxcXH09PTCwsJ4eHjT09Pn5+eysrIhISEvLy8mJiasrKw2NjYODg6GhoY7OzsbGxsgK+1zAAADTElEQVR4nO2c65KiMBCFjQFEUQkQFRTG93/LmdmVXABzMwlbW31+UqH5RAjpTk42G1eldfPokUL9o6lT5/DOuiYqqFHJNTJWPphg/WrIo4LtTbkQ2sfkqs25EKrjcVVHG7BjFQ2M2nAhRKOB7ezAdtHAiB0YiQZ2Eq7aDecFDZ3Q5LQGWPOmb0+bdcEU/xJZFezyvtFlTbBS8b3JyxXBGhVYA2AA5iz2DS9UrYqx1dHXdStafKFo+iqo4fBjW+qj+VW5NeGyGJz6k8Ew974GF0J37f+ozMjCqdf8m7nVoNmnjups6qKPEEqK8cDGetDsU+oBeLYeWKYEk7owsg8sKXcoTcEyHDy5z3FmD6Zu502mF2Tt+khZKu0twWLl9bzaYAgWLUkllmBlpFpgWlqCxaqE8PqMKVgX5SGrOmsww9HbZxLHpGowsVzyM+o9BJU8flenLP/st/K6Hpi68J6uB6bpnwp9hDBSpqg/ws91uJ5YA2ZXwvcng8mA6wp5Um805XTJbnGxbpk6EeHC54F3aKQIID6ozoaz9vEStWVn4k3uXRvMwtt++ESwAAIwAAMwAAMwAAMwAAOw/xEM08XkNKd0sZyc0oUQAcBo0naP/bxIdU+6LpnPVVX7R9cm02pbALBXdWO2sOE1mzid3xsXOUzyM/9g+Xh496b95EJsDkj+If7BWKI+uWVs+lW+ZXxViJxq+wdjdyCRXwCWh8plrpSt/ZTvMIABGIABGIABGIABGIABGIABGIABGIABGIABGIABGIABGIABGIABGIABGIABGIABGIABmAbs/gaMWRpkYyYHk9dJ+QdjESdWtfsyADfTvQnjb5kWWT48GjinhtGRgCwf9gj2Mt3O/Dr4jzXnNltc93e92dQSHGQpYF2Q3YIrNK8JqRfWAlY7UszsUD7Agmy4VjuDUeaBO4cAO4/Rn7Ze4cthPFVtyHQU6/YOpiauURV7z9sAC2FxO0Y/WXuYudFy8A/Gd2HU2SrnEuyM3h//z2Lzk3UbsdhK3FDG4XRh00sz+6OpRAOny2PCH1D0uxko9uK0r7C0+ajbiyVvedQmp+PHOiWtFNRxH88DCqyDG5fQ+4eRda/PtNUH/0QfvOx1QAd0r+7CvgGnPk31q70jlwAAAABJRU5ErkJggg==');
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.task-info__container {
+  display: flex;
+  align-items: center;
+}
+
+.task-type {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.span-urgent {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color:#e40404;
+}
+
+.span-important {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: #f3a703;
+}
+
+.span-normal {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: #028302;
+}
+
+.task__item:hover {
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form__button--add-task:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
