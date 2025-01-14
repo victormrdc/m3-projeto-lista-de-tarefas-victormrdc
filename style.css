@@ -155,6 +155,7 @@ h2 {
   width: 8px;
   border-radius: 100%;
   background-color:#e40404;
+  margin-left: 10px;
 }
 
 .span-important {
@@ -162,6 +163,7 @@ h2 {
   width: 8px;
   border-radius: 100%;
   background-color: #f3a703;
+  margin-left: 10px;
 }
 
 .span-normal {
@@ -169,6 +171,7 @@ h2 {
   width: 8px;
   border-radius: 100%;
   background-color: #028302;
+  margin-left: 10px;
 }
 
 .task__item:hover {

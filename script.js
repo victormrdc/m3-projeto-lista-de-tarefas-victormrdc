@@ -67,22 +67,14 @@ function removeTask(taskToRemove) {
   }
 }
 
-function addTask() {
-  const titleInput = document.getElementById("input_title");
-  const typeInput = document.querySelector(".form__input--priority");
-
-  const taskTitle = titleInput.value.trim();
-  const taskType = typeInput.value;
-
-  if (taskTitle && taskType) {
-    const newTask = {
-      title: taskTitle,
-      type: taskType,
-    };
-
-    tasks.push(newTask);
+function addTask(task) {
+  if (task.title.trim() && task.type) {
+    tasks.push(task);
 
     renderElements(tasks);
+
+    const titleInput = document.getElementById("input_title");
+    const typeInput = document.querySelector(".form__input--priority");
 
     titleInput.value = "";
     typeInput.value = "";
@@ -94,7 +86,16 @@ function addTask() {
 const addButton = document.querySelector(".form__button--add-task");
 addButton.addEventListener("click", (event) => {
   event.preventDefault();
-  addTask();
+
+  const titleInput = document.getElementById("input_title");
+  const typeInput = document.querySelector(".form__input--priority");
+
+  const newTask = {
+    title: titleInput.value,
+    type: typeInput.value,
+  };
+
+  addTask(newTask);
 });
 
 renderElements(tasks);
